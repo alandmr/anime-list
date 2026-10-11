@@ -1,6 +1,9 @@
+// const baseURL = import.meta.env.VITE_SERVER_URL
+// console.log(import.meta.env);
+
 export default class AnimeData {
   constructor() {
-    this.baseURL = "https://kitsu.io/api/edge";
+    this.baseURL = import.meta.env.VITE_SERVER_URL;
   }
 
   async searchAnime(query) {
