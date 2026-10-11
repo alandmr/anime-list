@@ -19,10 +19,12 @@ export default class AnimeList {
         .map(
           anime => `
             <article>
+              <h1>${anime.attributes.canonicalTitle}</h1>
               <img
-                src="${anime.images.jpg.image_url}"
-                alt="${anime.title }" 
-              </p>
+                src="${anime.attributes.coverImage.small}"
+                alt="${Object.values(anime.attributes.titles)[0]}" 
+              >
+              
             </article>
           `
         )
