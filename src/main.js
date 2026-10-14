@@ -5,15 +5,11 @@ const animeContainer =
 
 const animeList =
   new AnimeList(animeContainer);
+  animeList.init();
 
-document
-  .querySelector("#searchBtn")
-  .addEventListener("click", () => {
+const menuBtn = document.querySelector("#menu-toggle");
+const navLinks = document.querySelector("#nav-links");
 
-    const search =
-      document
-        .querySelector("#searchInput")
-        .value;
-
-    animeList.init("naruto");
-  });
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});

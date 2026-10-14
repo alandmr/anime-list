@@ -11,17 +11,25 @@
 <body>
 
     <header>
-        <h1>WDD330 Anime List and Scene finder</h1>
+        <nav class="navbar">
+            <div class="logo">
+            WDD330 Anime and Scene finder
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle">
+            ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/search/">Search Anime</a></li>
+            <li><a href="/scene/">Find Scene</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <input type="text" id="searchInput" placeholder="Buscar anime">
-
-        <button id="searchBtn">
-            Buscar
-        </button>
-
-        <section id="anime-list">
+        <section id="anime-list" class="anime-grid">
         </section>
     </main>
 
