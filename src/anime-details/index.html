@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Details</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/details2.css">
+
+  <script type="module" src="../js/AnimeDetails.js"></script>
+</head>
+<body>
+
+  <main id="anime-details-container">
+
+  <template id="anime-template">
+
+    <section class="anime-page">
+
+      <!-- CABECERA -->
+      <div class="hero-banner">
+        <img class="banner-img" src="" alt="">
+      </div>
+
+      <div class="anime-layout">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <aside class="anime-left">
+
+          <img class="anime-poster" src="" alt="">
+
+          <button class="btn btn-library">
+            Añadir a biblioteca
+          </button>
+
+          <!-- <button class="btn btn-completed">
+            Completado
+          </button>
+
+          <button class="btn btn-watching">
+            Quiero verlo
+          </button>
+
+          <button class="btn btn-started">
+            Empezado
+          </button> -->
+
+        </aside>
+
+        <!-- CONTENIDO CENTRAL -->
+        <section class="anime-center">
+
+          <!-- <nav class="anime-tabs">
+            <button class="tab active">Resumen</button>
+            <button class="tab">Episodios</button>
+            <button class="tab">Personajes</button>
+            <button class="tab">Relacionados</button>
+          </nav> -->
+
+          <h1 class="anime-title"></h1>
+
+          <p class="anime-rating"></p>
+
+          <p class="anime-description"></p>
+
+          <div class="anime-genres"></div>
+
+          <div class="anime-stats">
+
+            <div class="stat-card">
+              ❤️ Popularity
+            </div>
+
+            <div class="stat-card">
+              ⭐ Rating
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- COLUMNA DERECHA -->
+        <aside class="anime-right">
+
+          <!-- <div class="info-card trailer-card">
+
+            <button class="trailer-btn">
+              ▶ Ver Trailer
+            </button>
+
+          </div> -->
+
+          <div class="info-card">
+
+            <h3>Anime Details</h3>
+
+            <div class="details-grid">
+
+              <p><strong>Type:</strong></p>
+              <p class="anime-type"></p>
+
+              <p><strong>Episodes:</strong></p>
+              <p class="anime-episodes"></p>
+
+              <p><strong>Status:</strong></p>
+              <p class="anime-status"></p>
+
+              <p><strong>Rating:</strong></p>
+              <p class="anime-score"></p>
+
+              <p><strong>Start Date:</strong></p>
+              <p class="anime-date"></p>
+
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <h3>Personajes</h3>
+
+            <div class="characters-grid">
+            </div>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+  </template>
+
+</main>
+</body>
+</html>
