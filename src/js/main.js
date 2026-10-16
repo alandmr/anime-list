@@ -48,7 +48,8 @@ searchBtn.addEventListener("click", () => {
       'input[name="searchType"]:checked'
     ).value;
 
-  animeList.searchAnime(searchType, searchValue);
+    dropdown.classList.add("hidden");
+    animeList.searchAnime(searchType, searchValue);
 
 });
 

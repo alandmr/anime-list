@@ -11,7 +11,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         details: resolve(__dirname, "src/anime-details/index.html"),
-        findScene: resolve(__dirname, "src/find_scene/index.html"),
+        findScene: resolve(__dirname, "src/find-scene/index.html"),
       },
     },
   },
