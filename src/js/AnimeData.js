@@ -40,7 +40,6 @@ export default class AnimeData {
     );
 
     const data = await response.json();
-    console.log("Characters data:", data.data);
     
     return data.data || [];
   } catch (error) {
@@ -54,8 +53,7 @@ export default class AnimeData {
   async initAnime() {
     try {
 
-      console.log("Base URL:", this.baseURL);
-      console.log(import.meta.env);
+
       const randomCategory = Math.floor(Math.random() * 93) + 1;
       const response = await fetch(
         `${this.baseURL}/categories/${randomCategory}`
@@ -71,7 +69,7 @@ export default class AnimeData {
 
       // Obtenemos la lista de todos los animes según la categoría y sus respectivos IDs
       const categoryResponse = await fetch(result.data.relationships.anime.links.self);
-      console.log("Respuesta Category Response:",categoryResponse); 
+
 
       if (!categoryResponse.ok) {
         throw new Error(  
@@ -80,7 +78,7 @@ export default class AnimeData {
       }
 
       const categoryResult = await categoryResponse.json();
-      console.log("Respuesta Servidor:",categoryResult.data); 
+
       
 
       return categoryResult.data;
@@ -124,7 +122,6 @@ export default class AnimeData {
 
       
       searchResult = await response.json();
-      console.log("Respuesta Servidor, Search Anime:",searchResult);
       
       return searchResult;
     } catch (error) {

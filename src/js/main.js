@@ -1,11 +1,11 @@
 import AnimeList from "./AnimeList";
-console.log("1-->",import.meta.env);
-console.log("2-->",import.meta.env.VITE_SERVER_URL);
+import loadHeaderFooter from "./utils.mjs";
 
-console.log("3-->",import.meta.env);
-console.log("4-->",import.meta.env.VITE_TEST);
+document.addEventListener("DOMContentLoaded", async () => {
 
-const animeContainer =
+  await loadHeaderFooter();
+
+  const animeContainer =
   document.querySelector("#anime-list");
 
 const animeList =
@@ -48,9 +48,6 @@ searchBtn.addEventListener("click", () => {
       'input[name="searchType"]:checked'
     ).value;
 
-  console.log(searchType);
-  console.log(searchValue);
-
   animeList.searchAnime(searchType, searchValue);
 
 });
@@ -60,4 +57,10 @@ loadMoreBtn.addEventListener("click", animeList.loadAnime.bind(animeList));
 
 const previousBtn = document.querySelector("#previous");
 previousBtn.addEventListener("click", animeList.prevAnime.bind(animeList));
+
+  
+
+});
+
+
 

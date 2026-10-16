@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Details</title>
+
+  <link rel="stylesheet" href="../css/findScene.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="module" src="../js/findScene.js"></script>
+</head>
+<body>
+  <header id="main-header">
+        
+    </header>
+
+<main class="scene-finder-page">
+
+  <section class="search-section">
+
+    <h1 class="page-title">
+      Find Anime Scene
+    </h1>
+
+    <div class="search-bar">
+
+      <input
+        type="text"
+        id="image-url"
+        placeholder="Paste an image URL..."
+      />
+      <input
+        type="file"
+        id="image-file"
+        accept="image/*"
+      />
+
+      <button id="search-btn">
+        Search Scene
+      </button>
+
+    </div>
+
+  </section>
+
+  <section class="scene-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="matches-panel">
+
+      <h2>Matches</h2>
+
+      <div id="matches-container">
+
+        <!-- MATCH CARD -->
+
+        <div class="match-card active">
+
+          <img
+            src="https://via.placeholder.com/120x70"
+            alt=""
+          >
+
+          <div class="match-info">
+
+            <h4>Anime Title Name</h4>
+
+            <p>Episode #</p>
+
+            <span>0.00%</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <section class="content-panel">
+
+      <div class="video-container">
+
+        <video
+          controls
+          id="scene-video"
+        >
+        </video>
+
+      </div>
+
+    <div id="anime-details" class="anime-details-card">
+
+            <img
+            class="anime-cover"
+            src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735.jpg"
+            alt=""
+            >
+
+            <div class="anime-info">
+
+            <h1>Anime Title Name</h1>
+
+            <div class="info-badges">
+
+                <span>⭐ 0</span>
+
+                <span>🎬 Episode</span>
+
+                <span>🎯 0.00%</span>
+
+                <span>⏱️ 0m 0s</span>
+
+            </div>
+
+            <div class="genres">
+
+                <span class="genre-tag">
+                Action
+                </span>
+
+                <span class="genre-tag">
+                Adventure
+                </span>
+
+                <span class="genre-tag">
+                Shounen
+                </span>
+
+                <span class="genre-tag">
+                Fantasy
+                </span>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </section>
+
+</main>
+</body>
+</html>

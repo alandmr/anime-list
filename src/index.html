@@ -5,65 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
     <title>WDD330 Anime List and Scene finder</title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                WDD330 Anime and Scene Finder
-            </div>
-
-            <button class="menu-toggle" id="menu-toggle">
-            ☰
-            </button>
-
-            <ul class="nav-links" id="nav-links">
-            <li><a href="/">Home</a></li>
-            <li class="search-menu" id="searchToggle">
-                    <a href="#">Search Anime</a>
-
-                <div class="search-dropdown hidden" id="searchDropdown">
-                    <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search..."
-                    />
-
-                    <div class="search-options">
-                    <label>                        
-                        Genres
-                        <input type="radio" name="searchType" value="genres" checked>
-                    </label>
-
-                    <label>                        
-                        Category
-                        <input type="radio" name="searchType" value="category">
-                    </label>
-
-                    <label>                        
-                        Anime Name
-                        <input type="radio" name="searchType" value="anime">
-                    </label>
-
-                    <label>                        
-                        Anime Type
-                        <input type="radio" name="searchType" value="type">
-                    </label>
-
-                    <label>
-                        Anime status
-                        <input type="radio" name="searchType" value="status">                        
-                    </label>
-                    </div>
-                    <button id="searchBtn">Search</button>
-                </div>
-            </li>
-            <li><a href="/scene">Find Scene</a></li>
-            </ul>
-        </nav>
+    <header id="main-header">
+        
     </header>
 
     <main>
@@ -80,6 +29,6 @@
         </div>
     </main>
 
-    <script type="module" src="./js/main.js"></script>
+    
 </body>
 </html>

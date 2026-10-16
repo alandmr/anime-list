@@ -40,9 +40,6 @@ export default class AnimeList {
         loadMoreBtn.style.display = "none";
       }
 
-
-      console.log("Next URL 2 -->:", nextUrl);
-      console.log("Previous URL 2 -->:", previousUrl);
       this.renderList(animes.data,"1");
   }
 
@@ -65,7 +62,6 @@ export default class AnimeList {
       );
     }
     
-    console.log("Lista de animes Render List-->:", animeList);
 
     this.container.innerHTML = animeList
       .filter(anime =>
@@ -129,7 +125,6 @@ export default class AnimeList {
       }
 
       if (previousUrl) {
-        console.log("Entro Luego PRebios");
         previousBtn.style.display = "inline-block";
         previousBtn.textContent = "Previous";
         previousBtn.disabled = false
@@ -171,7 +166,6 @@ export default class AnimeList {
       }
 
       if (nextUrl) {
-        console.log("Entro Luego PRebios");
         loadMoreBtn.style.display = "inline-block";
         loadMoreBtn.textContent = "next";
         loadMoreBtn.disabled = false

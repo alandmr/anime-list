@@ -194,8 +194,6 @@ for (const character of characters.slice(0, 4)) {
             const response = await fetch(`${query}`);
             const data = await response.json();
 
-            console.log("Respuesta Servidor, getCharacter:",data.data);
-
             return data.data || [];
 
         }catch (error) {
